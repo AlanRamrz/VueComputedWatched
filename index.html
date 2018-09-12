@@ -7,7 +7,10 @@
   <body>
 
     <div id="app">
-      {{ message }}
+      <input v-model="person.name" type="text" placeholder="Name">
+      <input v-model="person.lastName" type="text" placeholder="Last Name">
+      <input v-model="person.age" type="number" placeholder="Age">
+      <h3>{{ description }}</h3>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
